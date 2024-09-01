@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair", serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:#bbc6fa ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote-box{
+    width:100%;
+    max-width:700px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    height: auto;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.quote-box h2{
+    font-size: 35px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.quote-box h2::after{
+    position: absolute;
+    content: "";
+    border-bottom: 3px solid rgb(23, 124, 229);
+    width: 80px;
+    height: 3px;
+    bottom:20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.quote-box blockquote{
+    font-size:25px ;
+    min-height: 110px;
+}
+.quote-box blockquote::before , .quote-box blockquote::after{
+    content: '"';
+}
+.quote-box span{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+}
+.quote-box span::before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    top:50% ;
+    left: -30px;
+    position: absolute;
+   background:rgb(23, 124, 229) ;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:60px;
+    gap: 20px;
+
+}
+.quote-box button{
+    font-size: 20px;
+    padding: 14px 20px;
+    width: 150px;
+    border:1px solid rgb(23, 124, 229);
+    outline: none;
+    border-radius: 20px;
+    background: rgb(23, 124, 229);
+    color: white;
+    cursor: pointer;
+}
+.twit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent !important;
+    color:rgb(23, 124, 229) !important ;
+}
+
+@media screen and (max-width:500px){
+    .quote-box{
+        width:100%;
+        max-width:320px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        height: auto;
+        text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .quote-box button{
+        font-size: 15px;
+        padding: 14px 20px;
+        width: 150px;
+        border:1px solid rgb(23, 124, 229);
+        outline: none;
+        border-radius: 20px;
+        background: rgb(23, 124, 229);
+        color: white;
+        cursor: pointer;
+    }
+}
